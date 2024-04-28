@@ -18,6 +18,7 @@ import Mylist from './components/pages/Mylist';
 import Additem from './components/pages/Additem';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Update from './components/Update';
+import Details from './components/Details';
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path:"/update/:id",
       element:<PrivateRoute><Update></Update></PrivateRoute>,
+      },
+      {
+        path:"/details/:id",
+      element:<Details></Details>,
       },
     ], 
   },
