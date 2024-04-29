@@ -1,11 +1,13 @@
+import { Helmet } from "react-helmet";
 
 
 const ErrorPage = () => {
     return (
         <div>
-             <h3 className="bg-red-500">ERROR</h3>
-             <h3></h3>
-        </div>
+        <Helmet><title> Art & Craft | 404not Found</title></Helmet>
+        <img className='h-[30%] w-[70%] mx-auto' src={logo} alt="" />
+        <h3>ERROR</h3>
+    </div>
     );
 };
 

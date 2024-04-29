@@ -25,6 +25,10 @@ const Home = () => {
 >
   
 </Player> */}
+<div className="w-[27%] mx-auto mt-24"><h2 className="mt-10 ml-6 mx-auto w-[100%] font-bold text-4xl text-stone-700 ">My Art&Craft List</h2>
+<hr className="mt-14 mb-24"/>
+
+</div>
 
                 </div>
             </div> 
