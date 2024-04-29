@@ -6,6 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import useAuth from "../../Hook/useAuth";
 import image from '../../assets/2248.jpg'
 import { useEffect, useState } from "react";
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const Navbar = () => {
   const [theme, setTheme]= useState('light')
@@ -51,6 +52,7 @@ console.log(user)
         <div  className="navbar border bg-base-100 border-t-2 rounded-t-xl mt-3 h-[90px] bg-cover  "
         //  style={{backgroundImage: 'url(https://i.ibb.co/nnHyJ0F/5570863.jpg)'}} 
          >
+          
           <div className="navbar-start">
             <div className="dropdown">
               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,11 +64,21 @@ console.log(user)
                 </div>
               </ul>
             </div >
-            <a className=" text-2xl font-bold text-stone-500 ml-4 bg-cover" >ART  <span className=" text-2xl font-bold text-purple-500  "  >&</span> CRAFT  </a>
+            <div className=" text-2xl font-bold text-stone-500 ml-4 bg-cover" >ART  <span className=" text-2xl font-bold text-purple-500  "  >&</span> CRAFT <Player className="absolute top-24 left-24 "
+autoplay
+loop
+src="https://lottie.host/8eefa778-8041-4fd1-a383-515059f150bd/1ZFkDPIbhS.json"
+style={{ height: '60px', width: '80px' }}
+>
+
+</Player> </div>
+            
           </div>
+
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
             <div className="flex space-x-14 text-xl font-bold ">
+       
                 {links}
                 </div>
             </ul>

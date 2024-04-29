@@ -1,3 +1,4 @@
+import { Player } from "@lottiefiles/react-lottie-player";
 import { Link } from "react-router-dom";
 
 const itemsCard = ({item}) => {
@@ -37,12 +38,22 @@ const itemsCard = ({item}) => {
             <p className="ml-16 font-bold">Rating :  <span className="font-bold text-neutral-500">{rating}</span> </p>
            
         </div>
+     
+
         <p className="text-sm bg-slate-100 font-bold w-[20%] p-1 text-center mx-auto  rounded-full"></p>
          <Link to={`/details/${_id}`}><button className="p-4 w-[90%] mx-auto btn mb-5 mt-4 ml-5  bg-purple-600 bg text-purple-200 font-semibold">View Details</button></Link>
+         <Player className="absolute top-24 left-24 "
+  autoplay
+  loop
+  src="https://lottie.host/8eefa778-8041-4fd1-a383-515059f150bd/1ZFkDPIbhS.json"
+  style={{ height: '200px', width: '200px' }}
+>
+  
+</Player>
     </div>
     
        </div>
-           
+    
         </div>
     );
 };
