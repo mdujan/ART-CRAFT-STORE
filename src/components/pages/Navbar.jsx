@@ -1,5 +1,6 @@
 // import {  NavLink } from "react-router-dom";
-
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { Link, NavLink } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import useAuth from "../../Hook/useAuth";
@@ -30,8 +31,16 @@ document.querySelector('html').setAttribute('data-theme', localTheme)
    
     <NavLink to={'/'}  className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><li>Home</li></NavLink>
     <NavLink to={'/allitems'} className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><li>All Items</li></NavLink>
-    <NavLink to={'/add'} className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><li>Add Items</li></NavLink>
-    <NavLink to={'/mylist'} className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><li>My List</li></NavLink>
+    <NavLink to={'/add'} className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><li id='add'>Add Items</li></NavLink>
+    
+    <NavLink to={'/mylist'} className={({ isActive }) => isActive ? "text-primary font-bold text-xl font-semibold " :"text-xl font-semibold hover:text-red-800"}><ReactTooltip
+                  className='mr-14 p-2'
+                anchorId="add"
+                place="bottom"
+                content="Add Items"
+                effect="float"
+                type="light"
+              /><li>My List</li></NavLink>
     
                 
      </>
@@ -84,8 +93,17 @@ console.log(user)
             </div>  : 
              <div className="dropdown dropdown-end">
           <div className="">
-                <div className="rounded-md w-[89px] bg-purple-300">
-                  <Link to={'login'} className="btn btn-outline w-full text-black-500 ">Login</Link >
+                <div  className="rounded-md w-[89px] bg-purple-300">
+                  <Link to={'login'} id='login' className="btn btn-outline w-full text-black-500 ">Login</Link >
+                  <ReactTooltip
+                  className='mr-14 p-2'
+                anchorId="login"
+                place="bottom"
+                content="Login here"
+                effect="float"
+                type="light"
+              />
+              
                 </div>
               </div>   
             

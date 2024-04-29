@@ -43,10 +43,11 @@ const router = createBrowserRouter([
       {
         path:"/allitems",
       element:<Allitems></Allitems>,
+      loader: () =>fetch('http://localhost:5000/item'),
       },
       {
         path:"mylist",
-      element:<Mylist></Mylist>,
+      element:<PrivateRoute><Mylist></Mylist></PrivateRoute>,
       },
       {
         path:"/add",
