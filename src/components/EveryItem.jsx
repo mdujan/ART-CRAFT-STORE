@@ -28,7 +28,7 @@ const EveryItem = ({item}) => {
   </div>
 </div>
         </div>
-    );
+);
 };
 
 export default EveryItem;
