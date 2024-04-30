@@ -10,7 +10,7 @@
 5. Mylist item have two buttons- UPDATE and DELETE button.
 6. Signup and login authorization & authentication will done here.
 7. Footer in all pages.
-8. Implement light and dark theme.
+8. Implement light and dark theme
 
 
 
