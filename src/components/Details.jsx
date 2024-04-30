@@ -8,7 +8,7 @@ const Details = () => {
     const[items, setItems]=useState({});
 
 useEffect (()=>{
-        fetch(`http://localhost:5000/singleItem/${id}`)
+        fetch(`https://b9-a10-store-server-nine.vercel.app/singleItem/${id}`)
         .then(res =>res.json())
         .then(data =>{
             setItems(data)

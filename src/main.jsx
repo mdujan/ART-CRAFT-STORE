@@ -19,6 +19,7 @@ import Additem from './components/pages/Additem';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Update from './components/Update';
 import Details from './components/Details';
+import CatDetails from './components/CatDetails';
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>,
-        loader: () =>fetch('http://localhost:5000/item')
+        loader: () =>fetch('https://b9-a10-store-server-nine.vercel.app/item'),
       },
       {
         path:"/login",
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       {
         path:"/allitems",
       element:<Allitems></Allitems>,
-      loader: () =>fetch('http://localhost:5000/item'),
+      loader: () =>fetch('https://b9-a10-store-server-nine.vercel.app/item'),
       },
       {
         path:"mylist",
@@ -61,6 +62,13 @@ const router = createBrowserRouter([
         path:"/details/:id",
       element:<Details></Details>,
       },
+      {
+        path:'/catDetails/:country',
+        element:<CatDetails></CatDetails>,
+        loader:({params})=>fetch(`https://b9-a10-store-server-nine.vercel.app/textile/${params.subcategory_name}`)
+      },
+
+
     ], 
   },
   

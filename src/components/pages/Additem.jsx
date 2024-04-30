@@ -27,7 +27,7 @@ const email =user.email;
 const newItem = {image,item_name,subcategory_name,short_description,price,rating,customization,processing_time,stock_status,user_name,email}
 console.log(newItem);
 // send data to the server:->
-fetch('http://localhost:5000/item',{
+fetch('https://b9-a10-store-server-nine.vercel.app/item',{
     method:'POST',
     headers:{
         'content-type':'application/json'
@@ -54,6 +54,8 @@ fetch('http://localhost:5000/item',{
     return (
         
         <section className="p-6 mx-28 rounded-xl dark:bg-gray-100 dark:text-gray-900 bg-purple-300">
+         <div><h1 className="mt-6 mb-5 mx-auto w-[19%] font-bold text-4xl ">View Item</h1>
+<hr  className="bg-black w-[29%] mx-auto "/></div>   
             <Helmet><title>Art & Crft | add items</title></Helmet>
         <form onSubmit={handleAddItem} noValidate="" action="" className="container flex flex-col mx-auto space-y-12">
             <div className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">

@@ -16,7 +16,7 @@ const [control, setControl] = useState(false);
 
 // console.log(user)
 useEffect(()=>{
-fetch( `http://localhost:5000/mylist/${user?.email}`)
+fetch( `https://b9-a10-store-server-nine.vercel.app/mylist/${user?.email}`)
         .then((res)=>res.json())
         .then((data)=>{
             setMyItem(data);
@@ -34,7 +34,7 @@ const handleDelete =(id)=>{
     confirmButtonText: "Yes, delete it!"
   }).then((result)=>{
 if(result.isConfirmed){
-  fetch(`http://localhost:5000/delete/${id}`,{
+  fetch(`https://b9-a10-store-server-nine.vercel.app/delete/${id}`,{
     method:"DELETE",
   })
 .then((res)=>res.json())

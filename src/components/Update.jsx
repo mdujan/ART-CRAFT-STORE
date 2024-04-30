@@ -8,7 +8,7 @@ const Update = () => {
     const[update, setUpdate]=useState({});
 
 useEffect (()=>{
-        fetch(`http://localhost:5000/singleItem/${id}`)
+        fetch(`https://b9-a10-store-server-nine.vercel.app/singleItem/${id}`)
         .then(res =>res.json())
         .then(data =>{
             setUpdate(data)
@@ -35,7 +35,7 @@ const user_name = form.user_name.value;
 
 const info = {image,item_name,subcategory_name,short_description,price,rating,customization,processing_time,stock_status,user_name};
 
-    fetch(`http://localhost:5000/updateItem/${id}`,{
+    fetch(`https://b9-a10-store-server-nine.vercel.app/updateItem/${id}`,{
     method:'PUT',
     headers:{
         'content-type': 'application/json'
