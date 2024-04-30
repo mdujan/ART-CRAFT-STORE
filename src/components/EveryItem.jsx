@@ -21,7 +21,8 @@ const EveryItem = ({item}) => {
   
 </Player>
    
-    <div className="card-actions ">
+    <div className="card-actions">
+     
       <Link to={`/details/${_id}`} className="btn text-yellow-700 mr-10 shadow-inner shadow-teal-500 border-amber-100  text-xl">View Details</Link>
     </div>
   </div>
