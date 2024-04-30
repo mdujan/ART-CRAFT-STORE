@@ -1,8 +1,17 @@
-# React + Vite
+                                        Project :-->  ART & Craft store 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. My projects name is Art & Craft Store.In Navbar there are project name ,HOME,Add items,All ites ,My list routes. 
+2. Use swiper slider in home page 2 times.
+3. I use 2 package:- 
+                    > react-tooltip.
+                    > Lottie-React.
+3. I select the Textile Arts catagory.
+4. in Mylist shown one users selected cards only.
+5. Mylist item have two buttons- UPDATE and DELETE button.
+6. Signup and login authorization & authentication will done here.
+7. Footer in all pages.
+8. Implement light and dark theme.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+                                        

@@ -50,7 +50,7 @@ const handleSocialLogin = (socialProvider) => {
 
     return (
         <div>
-        <Helmet><title>Login</title></Helmet>
+        <Helmet><title>Art & Craft | Login</title></Helmet>
         <ToastContainer />
         <div className="w-full mx-auto  shadow-amber-400 shadow-2xl rounded-badge  max-w-md p-8 bg-no-repeat space-y-3 bg-cover rounded-xl dark:bg-gray-50 dark:text-gray-800"style={{backgroundImage: 'url(https://i.ibb.co/t4Qk7hW/abstract-background-with-white-bokeh-lights.jpg)'}} >
             <h1 className="text-2xl font-bold text-center">Login</h1>

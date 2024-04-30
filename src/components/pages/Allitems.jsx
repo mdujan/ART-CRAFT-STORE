@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import EveryItem from "../EveryItem";
+import { Helmet } from "react-helmet";
 
 
 const Allitems = () => {
@@ -7,7 +8,8 @@ const Allitems = () => {
   console.log(items)
     return (
         <div>
-          <h1 className="mx-auto w-[19%] text-3xl font-bold">All items</h1>
+          <Helmet><title>Art & Crft | all items</title></Helmet>
+          <h1 className="mx-auto w-[19%] text-3xl font-bold text-stone-700">All items</h1>
           {
                     items.map(item=> <EveryItem 
                     key={item._id}

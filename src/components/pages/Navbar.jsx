@@ -6,7 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import useAuth from "../../Hook/useAuth";
 import image from '../../assets/2248.jpg'
 import { useEffect, useState } from "react";
-import { Player } from '@lottiefiles/react-lottie-player';
+
 
 const Navbar = () => {
   const [theme, setTheme]= useState('light')
@@ -64,17 +64,11 @@ console.log(user)
                 </div>
               </ul>
             </div >
-            <div className=" text-2xl font-bold text-stone-500 ml-4 bg-cover" >ART  <span className=" text-2xl font-bold text-purple-500  "  >&</span> CRAFT <Player className="absolute top-24 left-24 "
-autoplay
-loop
-src="https://lottie.host/8eefa778-8041-4fd1-a383-515059f150bd/1ZFkDPIbhS.json"
-style={{ height: '60px', width: '80px' }}
->
-
-</Player> </div>
+           
+            <div className=" text-2xl font-bold text-stone-500 ml-4 bg-cover">ART  <span className=" text-2xl font-bold text-purple-500 shadow-2xl shadow-purple-400 rounded-full "  >&</span> CRAFT  </div>
             
           </div>
-
+          <img  className="rounded-full top-2 ml-1  left-44 absolute w-[4%] h-[2%]" src="https://i.ibb.co/rbnwdPV/31530356-bird-2.jpg" alt="" />
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
             <div className="flex space-x-14 text-xl font-bold ">

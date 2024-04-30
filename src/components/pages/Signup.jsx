@@ -50,7 +50,7 @@ const Signup = () => {
 
     return (
         <div>
-        <Helmet><title>Luxary State | Register</title></Helmet>
+        <Helmet><title>Art & Craft | Register</title></Helmet>
         <ToastContainer />
         <div>
             <div className="w-full mx-auto  bg-purple-400 shadow-amber-400 shadow-2xl rounded-badge bg-cover max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800"style={{backgroundImage: 'url(https://i.ibb.co/t4Qk7hW/abstract-background-with-white-bokeh-lights.jpg)'}} data-aos="flip-left"

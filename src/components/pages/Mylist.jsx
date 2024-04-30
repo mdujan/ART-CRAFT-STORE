@@ -4,6 +4,7 @@ import useAuth from "../../Hook/useAuth";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { Helmet } from "react-helmet";
 // import { Player } from "@lottiefiles/react-lottie-player";
 
 
@@ -58,11 +59,12 @@ if(result.isConfirmed){
 }
 
     return (
+      
         <div className="">
-
-<div className="w-[17%]"><h2 className="mt-10 ml-6 mx-auto w-[19%] font-bold text-4xl text-stone-700 ">My Art&Craft List</h2>
-<hr /></div>
+<Helmet><title>Art & Crft | my list</title></Helmet>
+<div className="w-[17%]"><h2 className="mt-10 ml-6 mx-auto w-[19%] font-bold text-4xl text-stone-700 ">My Art&Craft List</h2></div>
 <div>
+
 <Player className="absolute top-24 left-24 "
   autoplay
   loop
